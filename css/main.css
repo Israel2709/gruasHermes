@@ -32,21 +32,27 @@ body {
           color: #fff;
           height: 45px; }
           .principal-wrapper .col-sm-2 .panel-group .panel-menu .panel-heading a, .principal-wrapper .col-sm-2 .panel-group .panel-submenu .panel-heading a, .principal-wrapper .col-sm-2 .panel-group .panel-last-menu .panel-heading a, .principal-wrapper .col-sm-10 .panel-group .panel-menu .panel-heading a, .principal-wrapper .col-sm-10 .panel-group .panel-submenu .panel-heading a, .principal-wrapper .col-sm-10 .panel-group .panel-last-menu .panel-heading a {
+            margin-left: 5px;
             font-family: 'Roboto', sans-serif;
             font-size: 12px;
             vertical-align: super; }
         .principal-wrapper .col-sm-2 .panel-group .panel-menu .bg-submenu, .principal-wrapper .col-sm-2 .panel-group .panel-submenu .bg-submenu, .principal-wrapper .col-sm-2 .panel-group .panel-last-menu .bg-submenu, .principal-wrapper .col-sm-10 .panel-group .panel-menu .bg-submenu, .principal-wrapper .col-sm-10 .panel-group .panel-submenu .bg-submenu, .principal-wrapper .col-sm-10 .panel-group .panel-last-menu .bg-submenu {
           background: #302f2f;
           margin-right: -3px; }
+          .principal-wrapper .col-sm-2 .panel-group .panel-menu .bg-submenu a, .principal-wrapper .col-sm-2 .panel-group .panel-submenu .bg-submenu a, .principal-wrapper .col-sm-2 .panel-group .panel-last-menu .bg-submenu a, .principal-wrapper .col-sm-10 .panel-group .panel-menu .bg-submenu a, .principal-wrapper .col-sm-10 .panel-group .panel-submenu .bg-submenu a, .principal-wrapper .col-sm-10 .panel-group .panel-last-menu .bg-submenu a {
+            margin-left: 28px; }
         .principal-wrapper .col-sm-2 .panel-group .panel-menu .bg-last-menu, .principal-wrapper .col-sm-2 .panel-group .panel-submenu .bg-last-menu, .principal-wrapper .col-sm-2 .panel-group .panel-last-menu .bg-last-menu, .principal-wrapper .col-sm-10 .panel-group .panel-menu .bg-last-menu, .principal-wrapper .col-sm-10 .panel-group .panel-submenu .bg-last-menu, .principal-wrapper .col-sm-10 .panel-group .panel-last-menu .bg-last-menu {
-          height: 35px;
+          height: 30px;
           font-size: 10px;
           background: #595656; }
           .principal-wrapper .col-sm-2 .panel-group .panel-menu .bg-last-menu a, .principal-wrapper .col-sm-2 .panel-group .panel-submenu .bg-last-menu a, .principal-wrapper .col-sm-2 .panel-group .panel-last-menu .bg-last-menu a, .principal-wrapper .col-sm-10 .panel-group .panel-menu .bg-last-menu a, .principal-wrapper .col-sm-10 .panel-group .panel-submenu .bg-last-menu a, .principal-wrapper .col-sm-10 .panel-group .panel-last-menu .bg-last-menu a {
+            margin-left: 50px;
             font-family: 'Roboto', sans-serif;
-            font-size: 12px; }
+            font-size: 11px; }
         .principal-wrapper .col-sm-2 .panel-group .panel-menu a:focus, .principal-wrapper .col-sm-2 .panel-group .panel-menu a:hover, .principal-wrapper .col-sm-2 .panel-group .panel-submenu a:focus, .principal-wrapper .col-sm-2 .panel-group .panel-submenu a:hover, .principal-wrapper .col-sm-2 .panel-group .panel-last-menu a:focus, .principal-wrapper .col-sm-2 .panel-group .panel-last-menu a:hover, .principal-wrapper .col-sm-10 .panel-group .panel-menu a:focus, .principal-wrapper .col-sm-10 .panel-group .panel-menu a:hover, .principal-wrapper .col-sm-10 .panel-group .panel-submenu a:focus, .principal-wrapper .col-sm-10 .panel-group .panel-submenu a:hover, .principal-wrapper .col-sm-10 .panel-group .panel-last-menu a:focus, .principal-wrapper .col-sm-10 .panel-group .panel-last-menu a:hover {
           text-decoration: none; }
+      .principal-wrapper .col-sm-2 .panel-group .panel-submenu:last-of-type, .principal-wrapper .col-sm-2 .panel-group .panel-last-menu:last-of-type, .principal-wrapper .col-sm-10 .panel-group .panel-submenu:last-of-type, .principal-wrapper .col-sm-10 .panel-group .panel-last-menu:last-of-type {
+        margin-bottom: 0px; }
     .principal-wrapper .col-sm-2 .panel-exit, .principal-wrapper .col-sm-10 .panel-exit {
       border-radius: 0px;
       margin-bottom: -7px;
@@ -58,6 +64,7 @@ body {
         height: 45px;
         font-weight: bold; }
         .principal-wrapper .col-sm-2 .panel-exit .bg-exit a, .principal-wrapper .col-sm-10 .panel-exit .bg-exit a {
+          margin-left: 5px;
           font-weight: bold;
           font-family: 'Roboto', sans-serif;
           font-size: 12px;
@@ -84,7 +91,8 @@ body {
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
-  display: inline-block; }
+  display: inline-block;
+  background-position: center; }
   .ico.inicio {
     background-image: url("../img/dash.png"); }
   .ico.administracion {
@@ -100,7 +108,8 @@ body {
   .ico.editar {
     background-image: url("../img/edit.png"); }
   .ico.expandir {
-    background-image: url("../img/expandir.png"); }
+    background-image: url("../img/expandir.png");
+    float: right; }
   .ico.filtro {
     background-image: url("../img/filter.png"); }
   .ico.grua {
