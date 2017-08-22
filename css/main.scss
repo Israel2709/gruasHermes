@@ -1,14 +1,20 @@
-body{
-	background: #595656;
-}
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+$orangeBg:#f89829;
+$mediumGray:#595656;
+$strongGray:#302f2f;
+
+body{
+	background: $mediumGray;
+}
+
+
 //css nav fixed
 .navbar-fixed-top{
-	background: #f89829;
+	background: $orangeBg;
 	.navbar-header{
-		background: #302f2f;
+		background: $strongGray;
 		float: left;
     	width: 19%;
     	padding: 0px;
@@ -36,7 +42,7 @@ body{
 			    margin-left: -1px;
 			    border-color: #979494;
 			    .panel-heading{
-			    	background: #595656;
+			    	background: $mediumGray;
 			    	color: #fff;
 			    	height: 45px;
 			    	a{
@@ -46,13 +52,13 @@ body{
 			    	}
 			    }
 			    .bg-submenu{
-					background: #302f2f;
+					background: $strongGray;
 					margin-right: -3px;
 				}
 				.bg-last-menu{
 					height: 35px;
 					font-size: 10px;
-					background: #595656;
+					background: $mediumGray;
 					a{
 						font-family: 'Roboto', sans-serif;
 						font-size: 12px;
@@ -70,7 +76,7 @@ body{
 			margin-left: -1px;
 			border: 0px;
 			.bg-exit{
-				background: #f89829;
+				background: $orangeBg;
 				margin-right: -3px;
 				height: 45px;
 				font-weight: bold;
