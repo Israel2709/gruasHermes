@@ -1,0 +1,164 @@
+body{
+	background: #595656;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+//css nav fixed
+.navbar-fixed-top{
+	background: #f89829;
+	.navbar-header{
+		background: #302f2f;
+		float: left;
+    	width: 19%;
+    	padding: 0px;
+    	margin-left: -63px;
+    	a{
+    		color: #fff;
+    		margin-left: auto!important;
+    	}
+	}
+}
+
+// collapse menu style 
+
+.principal-wrapper{
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	padding-top: 50px;
+	.col-sm-2, .col-sm-10{
+		padding: 0px;
+		.panel-group{
+			margin-right: -3px;
+			.panel-menu, .panel-submenu, .panel-last-menu{
+				border-radius: 0px;
+			    margin-bottom: -7px;
+			    margin-left: -1px;
+			    border-color: #979494;
+			    .panel-heading{
+			    	background: #595656;
+			    	color: #fff;
+			    	height: 45px;
+			    	a{
+			    		font-family: 'Roboto', sans-serif;
+			    		font-size: 12px;
+			    		vertical-align: super;
+			    	}
+			    }
+			    .bg-submenu{
+					background: #302f2f;
+					margin-right: -3px;
+				}
+				.bg-last-menu{
+					height: 35px;
+					font-size: 10px;
+					background: #595656;
+					a{
+						font-family: 'Roboto', sans-serif;
+						font-size: 12px;
+					}
+				}
+				a:focus, a:hover{
+					text-decoration: none;
+				}
+
+			}
+		}
+		.panel-exit{
+			border-radius: 0px;
+			margin-bottom: -7px;
+			margin-left: -1px;
+			border: 0px;
+			.bg-exit{
+				background: #f89829;
+				margin-right: -3px;
+				height: 45px;
+				font-weight: bold;
+					a{
+						font-weight: bold;
+						font-family: 'Roboto', sans-serif;
+						font-size: 12px;
+						vertical-align: super;
+					}
+					a:focus, a:hover{
+						text-decoration: none;
+					}
+			}
+		}
+		.content-wrapper{
+			margin-left: 3px;
+		}
+	}
+}
+
+.center{
+	text-align:center;
+}
+//icons
+.logo-hermes{
+	background-image: url("../img/logo_hermes.png");
+	width: 100px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	margin-right: auto;
+    margin-left: auto;
+}	
+.ico{
+	width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+		&.inicio{
+			background-image: url('../img/dash.png')
+		}
+		&.administracion{
+			background-image: url('../img/administracion.png');
+		}
+		&.recursos-humanos{
+			background-image: url('../img/rh.png');
+		}
+		&.comprimir{
+			background-image: url('../img/comprimir.png');
+		}
+		&.comprimir-tabla{
+			background-image: url('../img/comprimir_table.png');
+		}
+		&.dots{
+			background-image: url('../img/dots.png');
+		}
+		&.editar{
+			background-image: url('../img/edit.png');
+		}
+		&.expandir{
+			background-image: url('../img/expandir.png');
+		}
+		&.filtro{
+			background-image: url('../img/filter.png');
+		}
+		&.grua{
+			background-image: url('../img/grua.png');
+		}
+		&.salir{
+			background-image: url('../img/logout.png');
+		}
+		&.combos{
+			background-image: url('../img/menu.png');
+		}
+		&.notificaciones{
+			background-image: url('../img/notificaciones.png');
+		}
+		&.registro-over{
+			background-image: url('../img/nuevo_registro_over.png');
+		}
+		&.registro{
+			background-image: url('../img/nuevo_registro.png');
+		}
+		&.buscar{
+			background-image: url('../img/search.png');
+		}
+		&.borrar{
+			background-image: url('../img/trash.png');
+		}	
+}
