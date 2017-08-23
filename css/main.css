@@ -370,4 +370,97 @@ body {
         display: block;
         margin-top: -5px; }
 
+.result-table {
+  margin-bottom: 0px;
+  border-bottom: 1px solid #959595; }
+  .result-table thead tr:first-of-type {
+    background-color: #D0CDCB !important; }
+  .result-table td:first-of-type, .result-table th:first-of-type {
+    width: 50px;
+    padding-left: 20px; }
+  .result-table td:last-of-type, .result-table th:last-of-type {
+    padding-right: 30px; }
+  .result-table td {
+    vertical-align: middle !important; }
+  .result-table tr:nth-of-type(odd) {
+    background-color: #fff; }
+  .result-table tr:nth-of-type(even) {
+    background-color: #e5e5e5; }
+  .result-table .ico-crane {
+    background: url("../img/grua.png") no-repeat;
+    width: 56px;
+    height: 41px;
+    display: block; }
+  .result-table .ico-edit {
+    background: url("../img/edit.png") no-repeat;
+    width: 22px;
+    height: 22px;
+    display: block;
+    float: left; }
+  .result-table .ico-trash {
+    background: url("../img/trash.png") no-repeat;
+    width: 17px;
+    height: 20px;
+    display: block;
+    float: right; }
+  .result-table .btn-default {
+    background-color: #767676;
+    background-image: none;
+    color: #fff;
+    font-size: 12px; }
+    .result-table .btn-default :hover {
+      background-color: #767676;
+      background-image: none; }
+    .result-table .btn-default.width50p {
+      width: 50%; }
+  .result-table .checkbox-label {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 0px; }
+    .result-table .checkbox-label input[type=checkbox] {
+      position: absolute;
+      left: -15px;
+      top: 4px;
+      margin: 0px; }
+      .result-table .checkbox-label input[type=checkbox]:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #e5e5e5;
+        border: 1px solid #959595;
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 0px; }
+    .result-table .checkbox-label input[type=checkbox]:checked:after {
+      content: "\2713";
+      padding-left: 1px;
+      line-height: 1.2; }
+
+.pager-wrapper {
+  width: 100%;
+  float: left;
+  background-color: #F8F8F8;
+  padding: 20px; }
+  .pager-wrapper p {
+    width: 50%;
+    float: left;
+    text-align: left;
+    margin-top: 10px; }
+  .pager-wrapper nav {
+    width: 50%;
+    float: right; }
+    .pager-wrapper nav .pagination {
+      margin-top: 0px;
+      margin-bottom: 0;
+      float: right;
+      color: #595656; }
+      .pager-wrapper nav .pagination li a {
+        color: #595656;
+        border-color: #595656; }
+        .pager-wrapper nav .pagination li a:hover {
+          background-color: #f89829; }
+
 /*# sourceMappingURL=main.css.map */
