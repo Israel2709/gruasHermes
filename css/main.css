@@ -49,7 +49,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   padding-top: 50px; }
-  .principal-wrapper .col-sm-2, .principal-wrapper .col-sm-10 {
+  .principal-wrapper .col-sm-2.paddingless, .principal-wrapper .col-sm-10.paddingless {
     padding: 0px; }
   .principal-wrapper .panel-group {
     margin-right: -3px;
@@ -138,7 +138,8 @@ body {
         .principal-wrapper .content-wrapper .body .bg-exit a:focus, .principal-wrapper .content-wrapper .body .bg-exit a:hover {
           text-decoration: none; }
       .principal-wrapper .content-wrapper .body .panel-default {
-        border: none; }
+        border: none;
+        padding: 0 0px; }
         .principal-wrapper .content-wrapper .body .panel-default .panel-heading {
           background: none; }
     .principal-wrapper .content-wrapper .heading {
@@ -160,10 +161,10 @@ body {
       .principal-wrapper .content-wrapper .content-wrapper .panel {
         margin-right: 1px; }
     .principal-wrapper .content-wrapper .panel-heading {
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-bottom: 0px; }
+      position: relative;
+      padding: 20px 40px; }
       .principal-wrapper .content-wrapper .panel-heading h4 {
+        margin-left: -15px;
         font-weight: bold;
         font-size: 14px;
         margin-bottom: 10px; }
@@ -212,6 +213,29 @@ body {
           letter-spacing: 1px; }
           .principal-wrapper .content-wrapper .panel-heading .btn-wrapper .btn-gray:last-of-type {
             margin-right: 20px; }
+      .principal-wrapper .content-wrapper .panel-heading hr {
+        width: 100%;
+        height: 1px;
+        color: #959595;
+        position: absolute;
+        left: 0px;
+        bottom: 0px; }
+    .principal-wrapper .content-wrapper .panel-body {
+      border: none !important;
+      padding-left: 40px;
+      padding-right: 40px; }
+      .principal-wrapper .content-wrapper .panel-body .form-group .btn-group {
+        width: 100%;
+        display: block; }
+        .principal-wrapper .content-wrapper .panel-body .form-group .btn-group .dropdown-toggle {
+          width: 100%;
+          background: white;
+          color: #959595;
+          text-align: left; }
+          .principal-wrapper .content-wrapper .panel-body .form-group .btn-group .dropdown-toggle .caret {
+            float: right;
+            color: black;
+            margin-top: 8px; }
 
 .center {
   text-align: center; }
