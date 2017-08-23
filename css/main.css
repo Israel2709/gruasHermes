@@ -72,8 +72,6 @@ body {
           font-family: 'Roboto', sans-serif;
           font-size: 12px;
           vertical-align: super; }
-        .principal-wrapper .panel-group .panel-menu .panel-heading .principal-buttons, .principal-wrapper .panel-group .panel-submenu .panel-heading .principal-buttons, .principal-wrapper .panel-group .panel-last-menu .panel-heading .principal-buttons {
-          margin-top: 25px; }
       .principal-wrapper .panel-group .panel-menu .bg-submenu, .principal-wrapper .panel-group .panel-submenu .bg-submenu, .principal-wrapper .panel-group .panel-last-menu .bg-submenu {
         background: #302f2f;
         margin-right: -3px; }
@@ -168,6 +166,8 @@ body {
         font-weight: bold;
         font-size: 14px;
         margin-bottom: 10px; }
+      .principal-wrapper .content-wrapper .panel-heading .principal-buttons {
+        margin-top: 25px; }
       .principal-wrapper .content-wrapper .panel-heading .col-sm-6 {
         padding: 0px; }
       .principal-wrapper .content-wrapper .panel-heading .new-registry {
@@ -231,11 +231,18 @@ body {
           width: 100%;
           background: white;
           color: #959595;
-          text-align: left; }
+          text-align: left;
+          border: 1px solid #555; }
           .principal-wrapper .content-wrapper .panel-body .form-group .btn-group .dropdown-toggle .caret {
             float: right;
             color: black;
             margin-top: 8px; }
+      .principal-wrapper .content-wrapper .panel-body .form-group .form-control {
+        width: 100%;
+        background: white;
+        color: #959595;
+        text-align: left;
+        border: 1px solid #555; }
 
 .center {
   text-align: center; }
@@ -280,7 +287,8 @@ body {
     background-image: url("../img/dots.png");
     background-size: auto;
     float: right;
-    margin-top: -30px; }
+    margin-top: -30px;
+    margin-right: -20px; }
   .ico.editar {
     background-image: url("../img/edit.png"); }
   .ico.expandir {
@@ -305,5 +313,28 @@ body {
     background-image: url("../img/search.png"); }
   .ico.borrar {
     background-image: url("../img/trash.png"); }
+
+.btn-form-documents {
+  width: 100%; }
+  .btn-form-documents .btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    width: 100%; }
+    .btn-form-documents .btn.btn-documents-data {
+      height: 40px;
+      background: #f89829;
+      color: #fff;
+      border: 1px solid #A96E0B;
+      width: 35%; }
+    .btn-form-documents .btn.btn-documents-plus {
+      height: 40px;
+      background: #fff;
+      color: #f89829;
+      border: 1px solid #f89829;
+      width: 8%; }
+      .btn-form-documents .btn.btn-documents-plus .plus {
+        font-size: 24px;
+        display: block;
+        margin-top: -5px; }
 
 /*# sourceMappingURL=main.css.map */

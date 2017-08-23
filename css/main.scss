@@ -8,6 +8,7 @@ $lightGray:#959595;
 $orangeHover:#9E6E36;
 $panelBg:#F8F8F8;
 $orangeLight:#F99F38;
+$orangeDark:#A96E0B;
 
 body{
 	background: $mediumGray;
@@ -104,9 +105,6 @@ body{
 		    		font-family: 'Roboto', sans-serif;
 		    		font-size: 12px;
 		    		vertical-align: super;
-		    	}
-		    	.principal-buttons{
-		    		margin-top: 25px;
 		    	}
 		    }
 		    .bg-submenu{
@@ -230,6 +228,9 @@ body{
 				font-size:14px;
 				margin-bottom:10px;
 			}
+			.principal-buttons{
+		    		margin-top: 25px;
+		    }
 			.col-sm-6{
 				padding:0px;
 			}
@@ -308,6 +309,7 @@ body{
 						background:white;
 						color:$lightGray;
 						text-align: left;
+						border: 1px solid #555;
 						.caret{
 							float:right;
 							color: black;
@@ -316,6 +318,13 @@ body{
 
 					}
 				}
+				.form-control{
+						width: 100%;
+    					background: white;
+    					color: #959595;
+    					text-align: left;
+    					border: 1px solid #555;
+					}
 			}
 		}
 	}
@@ -374,6 +383,8 @@ body{
 			background-size: auto;
 			float: right;
     		margin-top: -30px;
+    		margin-right: -20px;
+
 		}
 		&.editar{
 			background-image: url('../img/edit.png');
@@ -410,4 +421,35 @@ body{
 		&.borrar{
 			background-image: url('../img/trash.png');
 		}	
+}
+
+//buttons
+
+.btn-form-documents{
+	width: 100%;
+	.btn{
+		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+	    width: 100%;
+	    
+		&.btn-documents-data{
+			height: 40px;
+			background: $orangeBg;
+			color: #fff;
+			border: 1px solid $orangeDark;
+			width: 35%;
+		}
+		&.btn-documents-plus{
+			height: 40px;
+			background: #fff;
+			color: $orangeBg;
+			border: 1px solid $orangeBg;
+			width: 8%;
+			.plus{
+				font-size: 24px;
+				display: block;
+    			margin-top: -5px;
+			}
+		}
+	}
 }
