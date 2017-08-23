@@ -53,9 +53,9 @@
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								<div class="panel panel-default panel-submenu">
-									<div class="panel-heading bg-submenu" role="tab" id="headingTwo1">
+									<div class="panel-heading bg-submenu" role="tab" id="headingTwo1" >
 										<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" onclick="selectedOption(this)">
 										Seguridad
 										</a>
 										<span class="ico expandir"></span>
@@ -65,17 +65,17 @@
 								<div class="panel panel-default panel-submenu">
 									<div class="panel-heading bg-submenu" role="tab" id="headingTwo2">
 										<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" >
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" onclick="selectedOption(this)">
 										Empleados
 										</a>
 										<span class="ico expandir"></span>
 										</h4>
 									</div>
 								</div>
-								<div class="panel panel-default panel-submenu">
+								<div class="panel panel-default panel-submenu" >
 									<div class="panel-heading bg-submenu" role="tab" id="headingTwo3">
 										<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" " href="#subheadingTwo" aria-expanded="true" aria-controls="headingTwo3">
+										<a class="collapsed" role="button" data-toggle="collapse" " href="#subheadingTwo" aria-expanded="true" aria-controls="headingTwo3" onclick="selectedOption(this)">
 										Grúas
 										</a>
 										<span class="ico expandir"></span>
@@ -85,7 +85,7 @@
 										<div class="panel panel-default panel-last-menu">
 											<div class="panel-heading bg-last-menu" role="tab" id="headingFour">
 												<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="selectedOptionSubmenu(this)">
 												Grúas
 												</a>
 												</h4>
@@ -94,7 +94,7 @@
 										<div class="panel panel-default panel-last-menu">
 											<div class="panel-heading bg-last-menu" role="tab" id="headingFour">
 												<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="selectedOptionSubmenu(this)">
 												Herramientas
 												</a>
 												</h4>
@@ -103,7 +103,7 @@
 										<div class="panel panel-default panel-last-menu">
 											<div class="panel-heading bg-last-menu" role="tab" id="headingFour">
 												<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="selectedOptionSubmenu(this)">
 												Tipo
 												</a>
 												</h4>
@@ -112,7 +112,7 @@
 										<div class="panel panel-default panel-last-menu">
 											<div class="panel-heading bg-last-menu" role="tab" id="headingFour">
 												<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="selectedOptionSubmenu(this)">
 												Documentación
 												</a>
 												</h4>
@@ -120,10 +120,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="panel panel-default panel-submenu">
+								<div class="panel panel-default panel-submenu" >
 									<div class="panel-heading bg-submenu" role="tab" id="headingTwo">
 										<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseTwo" onclick="selectedOption(this)">
 										Telefonía
 										</a>
 										<span class="ico expandir"></span>
@@ -131,9 +131,9 @@
 									</div>
 								</div>
 								<div class="panel panel-default panel-submenu">
-									<div class="panel-heading bg-submenu" role="tab" id="headingTwo">
+									<div class="panel-heading bg-submenu" role="tab" id="headingTwo" >
 										<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo" onclick="selectedOption(this)">
 										Roles de trabajo
 										</a>
 										<span class="ico expandir"></span>
@@ -154,18 +154,18 @@
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 								<div class="panel panel-default panel-submenu">
-									<div class="panel-heading bg-submenu" role="tab" id="headingTwo">
+									<div class="panel-heading bg-submenu" role="tab" id="submenuThree1">
 										<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" >
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" onclick="selectedOption(this)" >
 										Asistencias y Faltas
 										</a>
 										<span class="ico expandir"></span>
 										</h4>
 									</div>
 									<div class="panel panel-default panel-submenu">
-									<div class="panel-heading bg-submenu" role="tab" id="headingTwo">
+									<div class="panel-heading bg-submenu" role="tab" id="submenuThree2">
 										<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" >
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" onclick="selectedOption(this)">
 										Incidencias
 										</a>
 										<span class="ico expandir"></span>
@@ -175,8 +175,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="panel panel-default panel-exit">
+						<div class="panel panel-default panel-exit">
 							<div class="panel-heading bg-exit" role="tab" id="headingOne">
 								<h4 class="panel-title">
 								<span class="ico salir"></span>
@@ -186,6 +185,8 @@
 								</h4>
 							</div>
 						</div>
+					</div>
+					
 				</div>
 				<div class="col-sm-10">
 						<div class="panel panel-default content-wrapper">

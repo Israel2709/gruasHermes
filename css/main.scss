@@ -3,7 +3,9 @@
 
 $orangeBg:#f89829;
 $mediumGray:#595656;
-$strongGray:#302f2f;
+$strongGray:#302f2f;;
+$lightGray:#959595;
+$orangeHover:#9E6E36;
 
 body{
 	background: $mediumGray;
@@ -16,12 +18,17 @@ body{
 	.navbar-header{
 		background: $strongGray;
 		float: left;
-    	width: 19%;
+        width: 17%;
     	padding: 0px;
-    	margin-left: -63px;
+    	position: absolute;
+    	left: 0px;
     	a{
     		color: #fff;
     		margin-left: auto!important;
+    	}
+    	.navbar-right{
+    		right: 0px;
+    		position: absolute;
     	}
 	}
 }
@@ -42,6 +49,8 @@ body{
 			    margin-bottom: -7px;
 			    margin-left: -1px;
 			    border-color: #979494;
+			    cursor: pointer;
+
 			    .panel-heading{
 			    	background: $mediumGray;
 			    	color: #fff;
@@ -53,6 +62,9 @@ body{
 			    		vertical-align: super;
 			    	}
 			    }
+			 /*    .panel-heading:hover{
+			    	background: $orangeHover;
+			    } */
 			    .bg-submenu{
 					background: $strongGray;
 					margin-right: -3px;
@@ -70,9 +82,9 @@ body{
 						font-size: 11px;
 					}
 				}
-				.bg-last-menu:focus{
-					
-				}
+				/* .bg-last-menu:active, .bg-last-menu:focus{
+					background: $orangeBg;
+				} */
 				a:focus, a:hover{
 					text-decoration: none;
 				}
@@ -92,6 +104,9 @@ body{
 				margin-right: -3px;
 				height: 45px;
 				font-weight: bold;
+				position: fixed;
+				bottom: 0;
+				width: 17%;;
 					a{
 						margin-left: 5px;
 						font-weight: bold;
@@ -113,6 +128,13 @@ body{
 .center{
 	text-align:center;
 }
+.active{
+	background: $orangeHover!important;
+}
+
+.active-last-menu{
+	background: $orangeBg!important;
+}
 //icons
 .logo-hermes{
 	background-image: url("../img/logo_hermes.png");
@@ -123,6 +145,7 @@ body{
 	display: block;
 	margin-right: auto;
     margin-left: auto;
+    background-size: 70px;
 }	
 .ico{
 	width: 24px;
@@ -130,6 +153,7 @@ body{
     background-repeat: no-repeat;
     display: inline-block;
     background-position: center;
+    background-size: 16px;
 		&.inicio{
 			background-image: url('../img/dash.png')
 		}
@@ -141,6 +165,8 @@ body{
 		}
 		&.comprimir{
 			background-image: url('../img/comprimir.png');
+			float: right;
+			background-size: 10px;
 		}
 		&.comprimir-tabla{
 			background-image: url('../img/comprimir_table.png');
@@ -154,6 +180,7 @@ body{
 		&.expandir{
 			background-image: url('../img/expandir.png');
 			float: right;
+			background-size: 10px;
 		}
 		&.filtro{
 			background-image: url('../img/filter.png');
