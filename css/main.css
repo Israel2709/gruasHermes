@@ -7,12 +7,16 @@ body {
   .navbar-fixed-top .navbar-header {
     background: #302f2f;
     float: left;
-    width: 19%;
+    width: 17%;
     padding: 0px;
-    margin-left: -63px; }
+    position: absolute;
+    left: 0px; }
     .navbar-fixed-top .navbar-header a {
       color: #fff;
       margin-left: auto !important; }
+    .navbar-fixed-top .navbar-header .navbar-right {
+      right: 0px;
+      position: absolute; }
 
 .principal-wrapper {
   font-family: 'Roboto', sans-serif;
@@ -30,50 +34,74 @@ body {
       border-radius: 0px;
       margin-bottom: -7px;
       margin-left: -1px;
-      border-color: #979494; }
+      border-color: #979494;
+      cursor: pointer; }
       .principal-wrapper .panel-group .panel-menu .panel-heading, .principal-wrapper .panel-group .panel-submenu .panel-heading, .principal-wrapper .panel-group .panel-last-menu .panel-heading {
         background: #595656;
         color: #fff;
         height: 45px; }
         .principal-wrapper .panel-group .panel-menu .panel-heading a, .principal-wrapper .panel-group .panel-submenu .panel-heading a, .principal-wrapper .panel-group .panel-last-menu .panel-heading a {
+          margin-left: 5px;
           font-family: 'Roboto', sans-serif;
           font-size: 12px;
           vertical-align: super; }
       .principal-wrapper .panel-group .panel-menu .bg-submenu, .principal-wrapper .panel-group .panel-submenu .bg-submenu, .principal-wrapper .panel-group .panel-last-menu .bg-submenu {
         background: #302f2f;
         margin-right: -3px; }
+        .principal-wrapper .panel-group .panel-menu .bg-submenu a, .principal-wrapper .panel-group .panel-submenu .bg-submenu a, .principal-wrapper .panel-group .panel-last-menu .bg-submenu a {
+          margin-left: 28px; }
       .principal-wrapper .panel-group .panel-menu .bg-last-menu, .principal-wrapper .panel-group .panel-submenu .bg-last-menu, .principal-wrapper .panel-group .panel-last-menu .bg-last-menu {
-        height: 35px;
+        height: 30px;
         font-size: 10px;
         background: #595656; }
         .principal-wrapper .panel-group .panel-menu .bg-last-menu a, .principal-wrapper .panel-group .panel-submenu .bg-last-menu a, .principal-wrapper .panel-group .panel-last-menu .bg-last-menu a {
+          margin-left: 50px;
           font-family: 'Roboto', sans-serif;
-          font-size: 12px; }
-      .principal-wrapper .panel-group .panel-menu a:focus, .principal-wrapper .panel-group .panel-menu a:hover, .principal-wrapper .panel-group .panel-submenu a:focus, .principal-wrapper .panel-group .panel-submenu a:hover, .principal-wrapper .panel-group .panel-last-menu a:focus, .principal-wrapper .panel-group .panel-last-menu a:hover {
-        text-decoration: none; }
-  .principal-wrapper .panel-exit {
-    border-radius: 0px;
-    margin-bottom: -7px;
-    margin-left: -1px;
-    border: 0px; }
-    .principal-wrapper .panel-exit .bg-exit {
-      background: #f89829;
-      margin-right: -3px;
-      height: 45px;
-      font-weight: bold; }
-      .principal-wrapper .panel-exit .bg-exit a {
-        font-weight: bold;
-        font-family: 'Roboto', sans-serif;
-        font-size: 12px;
-        vertical-align: super; }
-      .principal-wrapper .panel-exit .bg-exit a:focus, .principal-wrapper .panel-exit .bg-exit a:hover {
-        text-decoration: none; }
+          font-size: 11px; }
+        .principal-wrapper .panel-group .panel-menu .bg-last-menu a:focus, .principal-wrapper .panel-group .panel-menu .bg-last-menu a:hover, .principal-wrapper .panel-group .panel-submenu .bg-last-menu a:focus, .principal-wrapper .panel-group .panel-submenu .bg-last-menu a:hover, .principal-wrapper .panel-group .panel-last-menu .bg-last-menu a:focus, .principal-wrapper .panel-group .panel-last-menu .bg-last-menu a:hover {
+          text-decoration: none; }
+    .principal-wrapper .panel-group .panel-submenu:last-of-type, .principal-wrapper .panel-group .panel-last-menu:last-of-type {
+      margin-bottom: 0px; }
+    .principal-wrapper .panel-group .panel-exit {
+      border-radius: 0px;
+      margin-bottom: -7px;
+      margin-left: -1px;
+      border: 0px; }
+      .principal-wrapper .panel-group .panel-exit .bg-exit {
+        background: #f89829;
+        margin-right: -3px;
+        height: 45px;
+        font-weight: bold; }
+        .principal-wrapper .panel-group .panel-exit .bg-exit a {
+          font-weight: bold;
+          font-family: 'Roboto', sans-serif;
+          font-size: 12px;
+          vertical-align: super; }
   .principal-wrapper .content-wrapper {
     border-radius: 0px;
     background: #959595;
     padding: 10px; }
     .principal-wrapper .content-wrapper .body {
-      border-radius: 0px; }
+      border-radius: 0px;
+      margin-bottom: -7px;
+      margin-left: -1px;
+      border: 0px; }
+      .principal-wrapper .content-wrapper .body .bg-exit {
+        background: #f89829;
+        margin-right: -3px;
+        height: 45px;
+        font-weight: bold;
+        position: fixed;
+        bottom: 0;
+        width: 17%; }
+        .principal-wrapper .content-wrapper .body .bg-exit a {
+          margin-left: 5px;
+          font-weight: bold;
+          font-family: 'Roboto', sans-serif;
+          font-size: 12px;
+          vertical-align: super; }
+        .principal-wrapper .content-wrapper .body .bg-exit a:focus, .principal-wrapper .content-wrapper .body .bg-exit a:hover {
+          text-decoration: none; }
       .principal-wrapper .content-wrapper .body .panel-default {
         border: none; }
         .principal-wrapper .content-wrapper .body .panel-default .panel-heading {
@@ -149,6 +177,12 @@ body {
 .center {
   text-align: center; }
 
+.active {
+  background: #9E6E36 !important; }
+
+.active-last-menu {
+  background: #f89829 !important; }
+
 .logo-hermes {
   background-image: url("../img/logo_hermes.png");
   width: 100px;
@@ -157,13 +191,16 @@ body {
   background-position: center;
   display: block;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  background-size: 70px; }
 
 .ico {
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
-  display: inline-block; }
+  display: inline-block;
+  background-position: center;
+  background-size: 16px; }
   .ico.inicio {
     background-image: url("../img/dash.png"); }
   .ico.administracion {
@@ -171,7 +208,9 @@ body {
   .ico.recursos-humanos {
     background-image: url("../img/rh.png"); }
   .ico.comprimir {
-    background-image: url("../img/comprimir.png"); }
+    background-image: url("../img/comprimir.png");
+    float: right;
+    background-size: 10px; }
   .ico.comprimir-tabla {
     background-image: url("../img/comprimir_table.png"); }
   .ico.dots {
@@ -179,7 +218,9 @@ body {
   .ico.editar {
     background-image: url("../img/edit.png"); }
   .ico.expandir {
-    background-image: url("../img/expandir.png"); }
+    background-image: url("../img/expandir.png");
+    float: right;
+    background-size: 10px; }
   .ico.filtro {
     background-image: url("../img/filter.png"); }
   .ico.grua {
