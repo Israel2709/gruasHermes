@@ -15,6 +15,7 @@ body{
 }
 
 
+
 //css nav fixed
 .navbar-fixed-top{
 	background: $orangeBg;
@@ -301,6 +302,10 @@ body{
 			padding-left: 40px;
 			padding-right: 40px;
 			.form-group{
+				label{
+					width: 100%;
+					text-transform: uppercase
+				}
 				.btn-group{
 					width: 100%;
 					display:block;
@@ -325,6 +330,42 @@ body{
     					text-align: left;
     					border: 1px solid #555;
 					}
+				.radio{
+					float: left;
+					width: 50%;
+					margin-top: 0px;
+					label{
+						position:relative;
+						overflow: hidden;
+						height: 30px;
+						line-height:2.5; 
+						padding-left:30px;
+						margin-top: 5px;
+						input{
+							position:absolute;
+							left: 0;
+							&:after{
+							    position: absolute;
+							    left: 20px;
+							    border: 1px solid $lightGray;
+							    color: #f89829;
+							    width: 20px;
+							    height: 20px;
+							    font-size: 29px;
+							    border-radius: 15px;
+							    content: "●";
+							    line-height: 0;
+							    padding-top: 7px;
+								content:""
+							}
+						}
+						input:checked{
+							&:after{
+								content:"\25CF"
+							}
+						}
+					}
+				}
 			}
 		}
 	}
