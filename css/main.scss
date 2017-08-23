@@ -26,10 +26,6 @@ body{
     		color: #fff;
     		margin-left: auto!important;
     	}
-    	.navbar-right{
-    		right: 0px;
-    		position: absolute;
-    	}
 	}
 }
 
@@ -121,9 +117,13 @@ body{
 		}
 		.content-wrapper{
 			margin-left: 3px;
+			.panel{
+				margin-right: 1px;
+			}
 		}
 	}
 }
+
 
 .center{
 	text-align:center;
