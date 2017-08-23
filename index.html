@@ -25,7 +25,7 @@
 							<span class="ico notificaciones"></span>
 							<div class="user-data">
 								<p class="name">JUAN PÉREZ</p>
-								<p class="role-name">Administrador <span class="caret"></span></p>
+								<p class="role-name">Administrador <span class="ico combos"></span></p>
 							</div>
 						</a></li>
 					</ul>
@@ -245,7 +245,7 @@
 															<label for="exampleInputEmail1">Tipo de grúa</label>
 															<div class="btn-group">
 																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																Plataforma <span class="caret"></span>
+																Plataforma <span class="ico combos"></span>
 																</button>
 																<ul class="dropdown-menu">
 																	<li><a href="#">Plataforma</a></li>
@@ -265,7 +265,7 @@
 															<label for="exampleInputEmail1">Marca</label>
 															<div class="btn-group">
 																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																GM <span class="caret"></span>
+																GM <span class="ico combos"></span>
 																</button>
 																<ul class="dropdown-menu">
 																	<li><a href="#">Chevrolet</a></li>
@@ -279,7 +279,7 @@
 															<label for="exampleInputEmail1">Modelo</label>
 															<div class="btn-group">
 																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																F170AT <span class="caret"></span>
+																F170AT <span class="ico combos"></span>
 																</button>
 																<ul class="dropdown-menu">
 																	<li><a href="#">F170AT</a></li>
@@ -292,7 +292,7 @@
 															<label for="exampleInputEmail1">Año</label>
 															<div class="btn-group">
 																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																2014 <span class="caret"></span>
+																2014 <span class="ico combos"></span>
 																</button>
 																<ul class="dropdown-menu">
 																	<li><a href="#">2013</a></li>
@@ -378,8 +378,8 @@
 														</div>
 														<div class="col-sm-6">
 															<ul class="nav nav-pills">
-																<li role="presentation"><a href="#">Herramientas</a></li>
-																<li role="presentation"><a href="#">Equipo</a></li>
+																<li role="presentation"><a href=""><span>HERRAMIENTAS</span></a></li>
+																<li role="presentation"><a href=""><span>EQUIPO</span></a></li>
 															</ul>
 														</div>
 													</div>
@@ -387,48 +387,65 @@
 												<div class="row">
 													<div class="container-fluid">
 														<div class="col-sm-6">
-															<div class="panel panel-default">
+															<div class="panel panel-default panel-documents">
 																<div class="panel-body">
 																	<div class="row">
 																		<div class="col-sm-4">
-																			<p>TIPO DE DOCUMENTO</p>
-																			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-																			Poliza de Seguro
-																			<span class="caret"></span>
-																			</button>
+																			<div class="form-group">
+																				<label for="exampleInputEmail1">TIPO DE DOCUMENTO</label>
+																				<div class="btn-group">
+																					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																					Poliza de Seguro <span class="ico combos"></span>
+																					</button>
+																					<ul class="dropdown-menu">
+																						<li><a href="#">Poliza de Seguro</a></li>
+																						<li><a href="#">Otra</a></li>
+																					</ul>
+																				</div>
+																			</div>
 																		</div>
 																		<div class="col-sm-8">
-																			<p>SERIE O FOLIO DE DOCUMENTO</p>
-																			<input type="text" value="###-###-###-####">
+																			<div class="form-group">
+																				<label for="exampleInputEmail1">SERIE O FOLIO DE DOCUMENTO</label>
+																				<input type="text" class="form-control" id="" value="###-###-####-####-####-####">
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="form-group">
+																				<label for="exampleInputEmail1">FECHA DE EXPEDICIÓN</label>
+																				<input type="text" class="form-control" id="" value="DD/MM/AAAA">
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="form-group">
+																				<label for="exampleInputEmail1">FECHA DE RENOVACIÓN</label>
+																				<input type="text" class="form-control" id="" value="DD/MM/AAAA">
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="form-group">
+																				<label for="exampleInputEmail1">FECHA DE VENCIMIENTO</label>
+																				<input type="text" class="form-control" id="" value="DD/MM/AAAA">
+																			</div>
 																		</div>
 																	</div>
-																	<div class="row">
-																		<div class="col-sm-4">
-																			<p>FECHA DE EXPEDICIÓN</p>
-																			<input type="date" value="DD/MMM/AAAA">
-																		</div>
-																		<div class="col-sm-4">
-																			<p>FECHA DE RENOVACIÓN</p>
-																			<input type="date" value="DD/MMM/AAAA">
-																		</div>
-																		<div class="col-sm-4">
-																			<p>FECHA DE VENCIMIENTO</p>
-																			<input type="date" value="DD/MMM/AAAA">
-																		</div>
-																	</div>
+																	<!-- <div class="row"> -->
+																		
+																	<!-- </div> -->
 																</div>
 															</div>
-															<p>ESTATUS</p>
-															<div class="btn-group" role="group" aria-label="...">
-																<button type="button" class="btn btn-default">Archivo</button>
-																<button type="button" class="btn btn-default">Baja</button>
-																<button type="button" class="btn btn-default">Hoy no circula</button>
-																<button type="button" class="btn btn-default">Servicio</button>
-																<button type="button" class="btn btn-default">Arrendada</button>
+															<br/>
+															<p class="status">ESTATUS</p>
+															<div class="btn-group btn-settings" role="group" aria-label="...">
+																<button type="button" class="btn btn-sett"><span>Activo<span></button>
+																<button type="button" class="btn btn-sett"><span>Baja</span></button>
+																<button type="button" class="btn btn-sett"><span>Hoy no circula</span></button>
+																<button type="button" class="btn btn-sett"><span>Servicio</span></button>
+																<button type="button" class="btn btn-sett"><span>Arrendada</span></button>
 															</div>
 														</div>
 														<div class="col-sm-6">
-															<div class="row">
+															<div class="row elements">
 																<div class="col-sm-3">
 																	<div class="checkbox">
 																		<label><input type="checkbox" value="">Triangulos</label>
@@ -527,58 +544,74 @@
 							</div>
 						</div>
 					</div>
-					<div class="container-fluid">
-						<div class="row">
-							<div class="container-fluid">
-								<div class="col-sm-6">
-									<div class="col-sm-4">
-										<button type="button" class="btn btn-default">+</button>
-										Nuevo Registro
-									</div>
-									<div class="col-sm-4">
-										<div class="input-group">
-											<span class="input-group-btn">
-												<button class="btn btn-default" type="button">Go!</button>
-											</span>
-											<input type="text" class="form-control" placeholder="Search for..." aria-describedby="basic-addon3">
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<div class="row">
-										<div class="col-sm-3, col-sm-offset-8">
-											<button type="button" class="btn btn-default">Editar</button>
-											<button type="button" class="btn btn-default">Cancelar</button>
-										</div>
-									</div>
+					<!-- <div class="container-fluid"> -->
+					<div class="row principal-buttons-two">
+						<div class="col-sm-6">
+							<div class="control-wrapper pull-left">
+								<button type="button" class="btn btn-default new-registry pull-left">+</button>
+								<label for="">Nuevo Registro</label>
+							</div>
+							<div class="form-group pull-left search-group">
+								<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+									<input type="text" class="form-control" id="exampleInputAmount" placeholder="Buscar">
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="row">
-									<div class="col-sm-10">
-										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Acción masiva
-										<span class="caret"> </span>
-										<button type="button" class="btn btn-default">Aplicar</button>
-										<button type="button" class="btn btn-default">Generar Reporte</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="row">
-									<div class="col-sm-6, col-sm-offset-3">
-										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										5
-										<span class="caret"></span>
-										</button>
-										<input type="text" class="form-control" placeholder="Tipo, #Serie, Placas" aria-describedby="sizing-addon1">
-									</div>
-								</div>
+						<div class="col-sm-6">
+							<div class="btn-wrapper pull-right">
+								<button type="button" class="btn btn-default btn-gray">Cancelar</button>
+								<button type="button" class="btn btn-default btn-gray">Editar</button>
 							</div>
 						</div>
 					</div>
+						<div class="row last-buttons">
+							<div class="col-sm-6 first-filter">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<div class="btn-group">
+												<button type="button" class="btn btn-action dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Acción masiva <span class="ico combos"></span>
+												</button>
+												<ul class="dropdown-menu">
+													<li><a href="#">Acción masiva</a></li>
+													<li><a href="#">Otra</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<button type="button" class="btn btn-apply">Aplicar</button>
+									</div>
+									<div class="col-sm-2">
+										<button type="button" class="btn btn-apply">Generar Reporte</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 second-filter">
+								<div class="row">
+									<div class="col-sm-2 col-sm-offset-2">
+										<div class="form-group">
+											<div class="btn-group">
+												<button type="button" class="btn btn-action dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												5 <span class="ico combos"></span>
+												</button>
+												<ul class="dropdown-menu">
+													<li><a href="#">5</a></li>
+													<li><a href="#">6</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8">
+										<input type="text" class="form-control search-filters" placeholder="Tipo, #Serie, Placas" aria-describedby="sizing-addon1">
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- </div> -->
 					<div class="row">
 						<div class="col-sm-12">
 							<table class="table table-striped result-table">
