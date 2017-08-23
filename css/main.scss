@@ -4,6 +4,10 @@
 $orangeBg:#f89829;
 $mediumGray:#595656;
 $strongGray:#302f2f;
+$lightGray:#959595;
+$orangeHover:#9E6E36;
+$panelBg:#F8F8F8;
+
 
 body{
 	background: $mediumGray;
@@ -34,65 +38,163 @@ body{
 	padding-top: 50px;
 	.col-sm-2, .col-sm-10{
 		padding: 0px;
-		.panel-group{
-			margin-right: -3px;
-			.panel-menu, .panel-submenu, .panel-last-menu{
-				border-radius: 0px;
-			    margin-bottom: -7px;
-			    margin-left: -1px;
-			    border-color: #979494;
-			    .panel-heading{
-			    	background: $mediumGray;
-			    	color: #fff;
-			    	height: 45px;
-			    	a{
-			    		font-family: 'Roboto', sans-serif;
-			    		font-size: 12px;
-			    		vertical-align: super;
-			    	}
-			    }
-			    .bg-submenu{
-					background: $strongGray;
-					margin-right: -3px;
+	}
+	.panel-group{
+		margin-right: -3px;
+		margin-bottom: 0px;
+		border-radius:0px;
+		background:$panelBg;
+		width: 100%;
+		.panel-menu, .panel-submenu, .panel-last-menu{
+			border-radius: 0px;
+		    margin-bottom: -7px;
+		    margin-left: -1px;
+		    border-color: #979494;
+		    .panel-heading{
+		    	background: $mediumGray;
+		    	color: #fff;
+		    	height: 45px;
+		    	a{
+		    		font-family: 'Roboto', sans-serif;
+		    		font-size: 12px;
+		    		vertical-align: super;
+		    	}
+		    }
+		    .bg-submenu{
+				background: $strongGray;
+				margin-right: -3px;
+			}
+			.bg-last-menu{
+				height: 35px;
+				font-size: 10px;
+				background: $mediumGray;
+				a{
+					font-family: 'Roboto', sans-serif;
+					font-size: 12px;
 				}
-				.bg-last-menu{
-					height: 35px;
-					font-size: 10px;
-					background: $mediumGray;
-					a{
-						font-family: 'Roboto', sans-serif;
-						font-size: 12px;
-					}
+			}
+			a:focus, a:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.panel-exit{
+		border-radius: 0px;
+		margin-bottom: -7px;
+		margin-left: -1px;
+		border: 0px;
+		.bg-exit{
+			background: $orangeBg;
+			margin-right: -3px;
+			height: 45px;
+			font-weight: bold;
+				a{
+					font-weight: bold;
+					font-family: 'Roboto', sans-serif;
+					font-size: 12px;
+					vertical-align: super;
 				}
 				a:focus, a:hover{
 					text-decoration: none;
 				}
-
-			}
 		}
-		.panel-exit{
+	}
+	.content-wrapper{
+		border-radius: 0px;
+		background:$lightGray;
+		padding:10px;
+		.body{
 			border-radius: 0px;
-			margin-bottom: -7px;
-			margin-left: -1px;
-			border: 0px;
-			.bg-exit{
-				background: $orangeBg;
-				margin-right: -3px;
-				height: 45px;
-				font-weight: bold;
-					a{
-						font-weight: bold;
-						font-family: 'Roboto', sans-serif;
-						font-size: 12px;
-						vertical-align: super;
-					}
-					a:focus, a:hover{
-						text-decoration: none;
-					}
+			.panel-default{
+				border:none;
+				.panel-heading{
+					background:none;
+				}
 			}
 		}
-		.content-wrapper{
-			margin-left: 3px;
+		.heading{
+			padding:20px;
+			h3{
+				color: white;
+				margin-top: 0px;
+				margin-bottom: 5px;
+			}
+			p{
+				margin-bottom:0px;
+				color: white;
+				font-size: 14px;
+				.first-breadcrumb{
+					color: black;
+				}
+				.last-breadcrumb{
+					color:$orangeBg
+				}
+			}
+		}
+		.panel-heading{
+			padding-left:30px;
+			padding-right:30px;
+			padding-bottom:0px;
+			h4{
+				font-weight:bold;
+				font-size:14px;
+				margin-bottom:10px;
+			}
+			.col-sm-6{
+				padding:0px;
+			}
+			.new-registry{
+			    font-size: 20px;
+			    color: white;
+			    text-align: center;
+			    width: 30px;
+			    height: 30px;
+			    background: #f89829;
+			    padding-top: 0px;
+			    padding-left: 9px;
+			    cursor: pointer;				
+			    background:$orangeBg;
+			}
+			label{
+				margin-top:7px;
+				margin-left: 15px;
+				color: $lightGray;
+				font-weight:normal;
+			}
+			.search-group{
+				width: 30%;
+				margin-left: 20px;
+				.input-group-addon{
+					background:none;
+					border-right:none;
+					height: 29px;
+					padding:5px 12px;
+				}
+				input{
+					border-left:none;
+					padding-left:0px;
+					height: 30px;
+				}
+				::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			 		font-style:italic;
+				}
+				
+			}
+			.btn-wrapper{
+				width: 100%;
+				.btn-gray{
+					width: 20%;
+					background:$lightGray;
+					color: white;
+					float: right;
+					font-size: 12px;
+					font-weight: normal;
+					letter-spacing: 1px;
+					&:last-of-type{
+						margin-right: 20px;
+					}
+				}
+			}
 		}
 	}
 }
