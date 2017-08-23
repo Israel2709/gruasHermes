@@ -36,7 +36,7 @@
 			</nav>
 			<div class="container-fluid principal-wrapper">
 				<div class="row">
-					<div class="col-sm-2">
+					<div class="col-sm-2 paddingless">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							<div class="panel panel-default panel-menu">
 								<div class="panel-heading" role="tab" id="headingOne">
@@ -196,7 +196,7 @@
 					
 				</div>
 				
-				<div class="col-sm-10">
+				<div class="col-sm-10 paddingless">
 					<div class="panel panel-default content-wrapper">
 						<div class="heading">
 							<h3>Administración de Grúas</h3>
@@ -209,12 +209,11 @@
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingOne">
 												<h4 class="panel-title">
-												<a role="button" data-toggle="collapse" data-parent="#main-content" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													Modulo de registro y actualización
-												</a>
+													<a role="button" data-toggle="collapse" data-parent="#main-content" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+														Modulo de registro y actualización
+													</a>
 												</h4>
 												<div class="row">
-													<div class="container-fluid">
 														<div class="col-sm-6">
 															<div class="control-wrapper pull-left">
 																<button type="button" class="btn btn-default new-registry pull-left">+</button>
@@ -234,59 +233,123 @@
 																<button type="button" class="btn btn-default btn-gray">Editar</button>
 															</div>
 														</div>
-													</div>
 												</div>
+												<hr>
 											</div>
 											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 												<div class="panel-body">
 													<div class="row">
-														<div class="container-fluid">
-															<div class="col-sm-6">
-																<div class="row">
-																	<div class="col-sm-4">
-																		<p>TIPO DE GRÚA</p>
-																		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-																		Plataforma
-																		<span class="caret"></span>
-																		</button>
-																	</div>
-																	<div class="col-sm-4">
-																		<p>NÚMERO ECONÓMICO</p>
-																		<input type="text" value="#####">
-																	</div>
-																	<div class="col-sm-4">
-																		<p>MARCA</p>
-																		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-																		GM
-																		<span class="caret"></span>
-																		</button>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="col-sm-4">
-																		<p>PLACAS</p>
-																		<input type="text" value="ABC-###">
-																	</div>
-																	<div class="col-sm-4">
-																		<p>HOLOGRAMA</p>
-																		<div class="radio">
-																			<label><input type="radio" name="optradio">Si</label>
-																		</div>
-																		<div class="radio">
-																			<label><input type="radio" name="optradio">No</label>
-																		</div>
-																	</div>
-																	<div class="col-sm-4">
-																		<p>ENGOMADO</p>
-																		<div class="radio">
-																			<label><input type="radio" name="optradio">Si</label>
-																		</div>
-																		<div class="radio">
-																			<label><input type="radio" name="optradio">No</label>
-																		</div>
-																	</div>
+														<div class="col-sm-2">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Tipo de grúa</label>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																	Plataforma <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">Plataforma</a></li>
+																		<li><a href="#">Cruz</a></li>
+																	</ul>
 																</div>
 															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Número económico</label>
+																<input type="text" class="form-control" id="" value="#####">
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Marca</label>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																	GM <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">Chevrolet</a></li>
+																		<li><a href="#">Dodge</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Modelo</label>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																	F170AT <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">F170AT</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Año</label>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																	2014 <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">2013</a></li>
+																		<li><a href="#">2014</a></li>
+																		<li><a href="#">2015</a></li>
+																		<li><a href="#">2016</a></li>
+																		<li><a href="#">2017</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="form-group">
+																<label for="exampleInputEmail1">ODÓMETRO</label>
+																<input type="text" class="form-control" id="" value="### ###">
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-sm-2">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Placas</label>
+																<input type="text" class="form-control" id="" value="ABC-###">
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="form-group">
+																<label for="">HOLOGRAMA</label>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																	</label>
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-4">
+															<p>HOLOGRAMA</p>
+															<div class="radio">
+																<label><input type="radio" name="optradio">Si</label>
+															</div>
+															<div class="radio">
+																<label><input type="radio" name="optradio">No</label>
+															</div>
+														</div>
+														<div class="col-sm-4">
+															<p>ENGOMADO</p>
+															<div class="radio">
+																<label><input type="radio" name="optradio">Si</label>
+															</div>
+															<div class="radio">
+																<label><input type="radio" name="optradio">No</label>
+															</div>
+														</div>
+													</div>
+
+														
+																
+															
 															<div class="col-sm-6">
 																<div class="row">
 																	<div class="col-sm-4">
@@ -319,8 +382,8 @@
 																	</div>
 																</div>
 															</div>
-														</div>
-													</div>
+
+
 													<div class="row">
 														<div class="container-fluid">
 															<div class="col-sm-6">
