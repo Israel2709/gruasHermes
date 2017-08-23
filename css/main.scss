@@ -22,7 +22,7 @@ body{
 	.navbar-header{
 		background: $strongGray;
 		float: left;
-        width: 17%;
+        width: 100%;
     	padding: 0px;
     	position: absolute;
     	left: 0px;
@@ -101,6 +101,7 @@ body{
 		    	background: $mediumGray;
 		    	color: #fff;
 		    	height: 45px;
+		    	border-radius:0px;
 		    	a{
 		    		margin-left: 5px;
 		    		font-family: 'Roboto', sans-serif;
