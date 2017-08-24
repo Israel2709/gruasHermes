@@ -365,6 +365,11 @@ body {
     float: right; }
   .ico.notificaciones {
     background-image: url("../img/notificaciones.png"); }
+  .ico.conter {
+    background-image: url("../img/notification.png");
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -6px; }
   .ico.registro-over {
     background-image: url("../img/nuevo_registro_over.png"); }
   .ico.registro {
@@ -619,6 +624,8 @@ body {
   border-bottom: 1px solid #959595; }
   .result-table thead tr:first-of-type {
     background-color: #D0CDCB !important; }
+  .result-table thead th.center {
+    text-align: center; }
   .result-table td:first-of-type, .result-table th:first-of-type {
     width: 50px;
     padding-left: 20px; }
@@ -655,8 +662,8 @@ body {
     .result-table .btn-default :hover {
       background-color: #767676;
       background-image: none; }
-    .result-table .btn-default.width50p {
-      width: 50%; }
+    .result-table .btn-default.width65p {
+      width: 65%; }
   .result-table .checkbox-label {
     overflow: hidden;
     position: relative;

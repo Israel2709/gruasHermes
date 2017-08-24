@@ -482,6 +482,12 @@ body{
 		&.notificaciones{
 			background-image: url('../img/notificaciones.png');
 		}
+		&.conter{
+			background-image: url('../img/notification.png');
+			position: absolute;
+    		margin-left: 10px;
+    		margin-top: -6px;
+		}
 		&.registro-over{
 			background-image: url('../img/nuevo_registro_over.png');
 		}
