@@ -801,6 +801,9 @@ body{
 		tr:first-of-type{
 			background-color:#D0CDCB !important
 		}
+		th.center{
+			text-align: center;
+		}
 	}
 	td:first-of-type,th:first-of-type{
 		width: 50px;
@@ -848,8 +851,8 @@ body{
 			background-color: #767676;
 			background-image: none;
 		}
-		&.width50p{
-			width: 50%;
+		&.width65p{
+			width: 65%;
 		}
 	}
 	.checkbox-label{
