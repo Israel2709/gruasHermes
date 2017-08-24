@@ -1,14 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
-  background: #595656; }
+  background: #595656;
+  overflow-x: hidden; }
 
 .navbar-fixed-top {
   background: #f89829; }
   .navbar-fixed-top .navbar-header {
     background: #302f2f;
     float: left;
-    width: 17%;
+    width: 100%;
     padding: 0px;
     position: absolute;
     left: 0px; }
@@ -52,6 +53,8 @@ body {
   padding-top: 50px; }
   .principal-wrapper .col-sm-2.paddingless, .principal-wrapper .col-sm-10.paddingless {
     padding: 0px; }
+  .principal-wrapper #accordion {
+    position: fixed; }
   .principal-wrapper .panel-group {
     margin-right: -3px;
     margin-bottom: 0px;
@@ -67,7 +70,8 @@ body {
       .principal-wrapper .panel-group .panel-menu .panel-heading, .principal-wrapper .panel-group .panel-submenu .panel-heading, .principal-wrapper .panel-group .panel-last-menu .panel-heading {
         background: #595656;
         color: #fff;
-        height: 45px; }
+        height: 45px;
+        border-radius: 0px; }
         .principal-wrapper .panel-group .panel-menu .panel-heading a, .principal-wrapper .panel-group .panel-submenu .panel-heading a, .principal-wrapper .panel-group .panel-last-menu .panel-heading a {
           margin-left: 5px;
           font-family: 'Roboto', sans-serif;
@@ -114,7 +118,8 @@ body {
   .principal-wrapper .content-wrapper {
     border-radius: 0px;
     background: #959595;
-    padding: 10px; }
+    padding: 10px;
+    margin-bottom: 0px; }
     .principal-wrapper .content-wrapper .body {
       border-radius: 0px;
       margin-bottom: -7px;
