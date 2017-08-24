@@ -1,3 +1,4 @@
+
 //menu activo
 function changeStatus(option){
 	if($(option).siblings("span:last").hasClass("expandir")){
