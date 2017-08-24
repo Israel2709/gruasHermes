@@ -399,9 +399,24 @@ body {
     text-align: left;
     border: 1px solid #555; }
 
-.search-filters, .input-group {
+.input-group-addon {
+  background: #fff;
   border: 1px solid #555;
-  border-radius: 4px; }
+  padding: 0px 4px;
+  border-left: none; }
+
+.search-group-filter {
+  width: 100%; }
+  .search-group-filter .search-filters, .search-group-filter .search-input {
+    border: 1px solid #555;
+    border-radius: 4px;
+    border-right: none;
+    height: 35px; }
+  .search-group-filter .border-input {
+    border-left: 1px solid #555; }
+  .search-group-filter .search-input {
+    height: 31px !important;
+    border-right: 1px solid #555; }
 
 .btn-settings {
   margin-top: -5px;

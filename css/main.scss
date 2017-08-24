@@ -524,9 +524,27 @@ body{
 		}
 }
 
-.search-filters, .input-group{
-	border: 1px solid #555;
-    border-radius: 4px;
+.input-group-addon{
+	background: #fff;
+    border: 1px solid #555;
+    padding: 0px 4px;
+    border-left: none;
+}
+.search-group-filter{
+	width: 100%;
+	.search-filters, .search-input{
+		border: 1px solid #555;
+    	border-radius: 4px;
+    	border-right: none;
+    	height: 35px;
+	}
+	.border-input{
+		border-left: 1px solid #555;
+	}
+	.search-input{
+		height: 31px!important;
+		border-right: 1px solid #555;
+	}
 }
 .btn-settings{
 	 margin-top: -5px;
