@@ -25,7 +25,7 @@ body {
       border-left: 2px solid #F99F38; }
     .navbar-fixed-top .navbar-collapse .navbar-right .perfil-user {
       height: 50px;
-      width: 130px; }
+      width: 145px; }
       .navbar-fixed-top .navbar-collapse .navbar-right .perfil-user a {
         color: #333; }
         .navbar-fixed-top .navbar-collapse .navbar-right .perfil-user a span {
@@ -67,6 +67,8 @@ body {
       margin-left: -1px;
       border-color: #979494;
       cursor: pointer; }
+      .principal-wrapper .panel-group .panel-menu h4, .principal-wrapper .panel-group .panel-submenu h4, .principal-wrapper .panel-group .panel-last-menu h4 {
+        width: 15%; }
       .principal-wrapper .panel-group .panel-menu .panel-heading, .principal-wrapper .panel-group .panel-submenu .panel-heading, .principal-wrapper .panel-group .panel-last-menu .panel-heading {
         background: #595656;
         color: #fff;
@@ -335,6 +337,12 @@ body {
     float: right;
     margin-top: -30px;
     margin-right: -20px; }
+  .ico.usuario {
+    background-image: url("../img/user.png");
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    margin-top: -4px; }
   .ico.editar {
     background-image: url("../img/edit.png"); }
   .ico.expandir {
@@ -372,6 +380,13 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   width: 100%; }
+  .btn.btn-documents-data-inactive {
+    height: 40px;
+    background: #959595;
+    color: #fff;
+    border: 1px solid #595656;
+    width: 33%;
+    border-bottom-left-radius: 0px; }
   .btn.btn-documents-data {
     height: 40px;
     background: #f89829;
@@ -404,6 +419,9 @@ body {
     text-align: left;
     border: 1px solid #555; }
 
+.combo-perfil {
+  margin-top: -50px; }
+
 .input-group-addon {
   background: #fff;
   border: 1px solid #555;
@@ -416,11 +434,11 @@ body {
     border: 1px solid #555;
     border-radius: 4px;
     border-right: none;
-    height: 35px; }
+    height: 34px; }
   .search-group-filter .border-input {
     border-left: 1px solid #555; }
   .search-group-filter .search-input {
-    height: 31px !important;
+    height: 30px !important;
     border-right: 1px solid #555; }
 
 .btn-settings {
@@ -462,9 +480,32 @@ body {
         border: 1px solid #959595 !important;
         font-size: 12px !important; }
 
+.registry-inactive {
+  color: #fff !important;
+  background: #959595 !important; }
+  .registry-inactive label {
+    margin-top: 7px;
+    margin-left: 15px;
+    color: #fff;
+    font-weight: normal; }
+
+.active-elements a {
+  background-color: transparent !important;
+  color: #f89829 !important; }
+  .active-elements a span {
+    border-bottom: 2px solid #f89829;
+    padding-bottom: 5px; }
+
+.status-active {
+  background: #f89829 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  border: 1px solid #A96E0B !important; }
+
 .nav-pills li {
   width: 25%; }
   .nav-pills li a {
+    cursor: pointer;
     padding-left: 0px;
     color: #555;
     font-weight: bold; }
@@ -475,15 +516,38 @@ body {
       border-bottom: 2px solid #f89829;
       padding-bottom: 5px; }
 
-.elements {
+.hidden {
+  visible: hidden; }
+
+.settings-elements, .work-elements {
   color: #595656; }
-  .elements .checkbox {
-    line-height: 22px; }
-    .elements .checkbox label {
+  .settings-elements .checkbox, .work-elements .checkbox {
+    position: relative;
+    margin: 4px auto;
+    line-height: 24px; }
+    .settings-elements .checkbox label, .work-elements .checkbox label {
       display: inline; }
-      .elements .checkbox label input {
+      .settings-elements .checkbox label input[type=checkbox], .work-elements .checkbox label input[type=checkbox] {
         width: 16px;
         height: 16px; }
+        .settings-elements .checkbox label input[type=checkbox]:after, .work-elements .checkbox label input[type=checkbox]:after {
+          margin-left: -15px;
+          width: 15px;
+          height: 15px;
+          border-radius: 3px;
+          background: #EEEEEE;
+          border: 1px solid #959595;
+          content: "";
+          position: absolute;
+          left: 15px;
+          top: 0px; }
+      .settings-elements .checkbox label input[type=checkbox]:checked:after, .work-elements .checkbox label input[type=checkbox]:checked:after {
+        background: #f89829;
+        border: 1px solid #A96E0B;
+        color: #fff;
+        content: "\2713";
+        padding-left: 1px;
+        line-height: 1.2; }
 
 .principal-buttons-two, .last-buttons, .footers {
   background: #fff;

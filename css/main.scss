@@ -46,7 +46,7 @@ body{
     		}
     		.perfil-user{
     			height: 50px;
-    			width: 130px;
+    			width: 145px;
     			a{
     				color: #333;
     				span{
@@ -103,6 +103,10 @@ body{
 		    margin-left: -1px;
 		    border-color: #979494;
 		    cursor: pointer;
+
+		    h4{
+		    	width: 15%;
+		    }
 
 		    .panel-heading{
 		    	background: $mediumGray;
@@ -442,6 +446,13 @@ body{
     		margin-right: -20px;
 
 		}
+		&.usuario{
+			background-image: url('../img/user.png');
+			background-size: 30px;
+    		width: 30px;
+    		height: 30px;
+    		margin-top: -4px;
+		}
 		&.editar{
 			background-image: url('../img/edit.png');
 		}
@@ -492,7 +503,15 @@ body{
 .btn{
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
-    width: 100%;	    
+    width: 100%;	
+    	&.btn-documents-data-inactive{
+			height: 40px;
+			background: $lightGray;
+			color: #fff;
+			border: 1px solid $mediumGray;
+			width: 33%;
+			border-bottom-left-radius: 0px;
+		}    
 		&.btn-documents-data{
 			height: 40px;
 			background: $orangeBg;
@@ -531,6 +550,10 @@ body{
 		}
 }
 
+.combo-perfil{
+	margin-top: -50px;
+}
+
 .input-group-addon{
 	background: #fff;
     border: 1px solid #555;
@@ -543,13 +566,13 @@ body{
 		border: 1px solid #555;
     	border-radius: 4px;
     	border-right: none;
-    	height: 35px;
+    	height: 34px;
 	}
 	.border-input{
 		border-left: 1px solid #555;
 	}
 	.search-input{
-		height: 31px!important;
+		height: 30px!important;
 		border-right: 1px solid #555;
 	}
 }
@@ -599,10 +622,41 @@ body{
 	}
 }
 
+.registry-inactive{
+		color: #fff!important;			
+		background:$lightGray!important;
+		label{
+				margin-top:7px;
+				margin-left: 15px;
+				color: #fff;
+				font-weight:normal;
+			}
+	}
+			
+
+.active-elements{
+	a{
+    		background-color: transparent!important;
+    		color: $orangeBg!important;
+    		span{
+    			border-bottom: 2px solid $orangeBg;
+    			padding-bottom: 5px;
+    		}
+		}
+}
+
+.status-active{
+	background: #f89829!important;
+    color: #fff!important;
+    font-weight: bold!important;
+    border: 1px solid #A96E0B!important;
+}
+
 .nav-pills{
 	li{
 		width: 25%;
 		a{	
+			cursor: pointer;
 			padding-left: 0px;
 			color: #555;
 			font-weight: bold;
@@ -618,16 +672,45 @@ body{
 	}
 }
 
-.elements{
+.hidden{
+	visible: hidden;
+}
+.settings-elements, .work-elements{
 	color: $mediumGray;
 	.checkbox{
-		line-height: 22px;
+		position: relative;
+  		margin: 4px auto;
+    	line-height: 24px;
 		label{
 			display: inline;
-			input{
+			input[type=checkbox]{
 				width: 16px;
     			height: 16px;
+	    			&:after{
+	    				margin-left: -15px;
+						width: 15px;
+						height: 15px;
+						border-radius:3px;
+						background:$panelDm;
+						border:1px solid $lightGray;
+						content:"";
+						position:absolute;
+						left: 15px;
+						top:0px;
+					}
 			}
+			input[type=checkbox]{
+			&:checked{
+				&:after{
+					background: $orangeBg;
+					border:1px solid $orangeDark;
+					color: #fff;
+					content:"\2713";
+					padding-left: 1px;
+					line-height: 1.2;
+				}
+			}
+		}
 		}
 	}
 }
