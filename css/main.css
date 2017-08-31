@@ -149,7 +149,7 @@ body {
         .principal-wrapper .content-wrapper .body .panel-default .panel-heading {
           background: none; }
     .principal-wrapper .content-wrapper .heading {
-      padding: 20px; }
+      padding: 5px 20px; }
       .principal-wrapper .content-wrapper .heading h3 {
         color: white;
         margin-top: 0px;
@@ -168,7 +168,7 @@ body {
         margin-right: 1px; }
     .principal-wrapper .content-wrapper .panel-heading {
       position: relative;
-      padding: 20px 40px; }
+      padding: 15px 40px; }
       .principal-wrapper .content-wrapper .panel-heading h4 {
         margin-left: -15px;
         font-weight: bold;
@@ -179,14 +179,13 @@ body {
       .principal-wrapper .content-wrapper .panel-heading .col-sm-6 {
         padding: 0px; }
       .principal-wrapper .content-wrapper .panel-heading .new-registry {
-        font-size: 20px;
+        font-size: 15px;
         color: white;
         text-align: center;
-        width: 30px;
-        height: 30px;
-        background: #f89829;
-        padding-top: 0px;
-        padding-left: 9px;
+        width: 25px;
+        height: 25px;
+        padding-top: 2px;
+        padding-left: 8px;
         cursor: pointer;
         background: #f89829; }
       .principal-wrapper .content-wrapper .panel-heading label {
@@ -198,10 +197,11 @@ body {
         width: 30%;
         margin-left: 20px; }
         .principal-wrapper .content-wrapper .panel-heading .search-group .input-group-addon {
+          font-size: 10px;
           background: none;
           border-right: none;
-          height: 29px;
-          padding: 5px 12px; }
+          height: 25px;
+          padding: 3px 12px; }
         .principal-wrapper .content-wrapper .panel-heading .search-group input {
           border-left: none;
           padding-left: 0px;
@@ -210,7 +210,8 @@ body {
           /* Chrome/Opera/Safari */
           font-style: italic; }
       .principal-wrapper .content-wrapper .panel-heading .btn-wrapper {
-        width: 100%; }
+        width: 100%;
+        padding-top: 4px; }
         .principal-wrapper .content-wrapper .panel-heading .btn-wrapper .btn-gray {
           width: 20%;
           background: #959595;
@@ -218,7 +219,10 @@ body {
           float: right;
           font-size: 12px;
           font-weight: normal;
-          letter-spacing: 1px; }
+          letter-spacing: 1px;
+          height: 25px;
+          padding-top: 4px;
+          font-size: 10px; }
           .principal-wrapper .content-wrapper .panel-heading .btn-wrapper .btn-gray:last-of-type {
             margin-right: 20px; }
       .principal-wrapper .content-wrapper .panel-heading hr {
@@ -227,14 +231,14 @@ body {
         color: #959595;
         position: absolute;
         left: 0px;
-        bottom: 0px; }
+        bottom: -10px; }
     .principal-wrapper .content-wrapper .panel-body {
       border: none !important;
-      padding-left: 40px;
-      padding-right: 40px; }
+      padding: 5px 40px; }
       .principal-wrapper .content-wrapper .panel-body .form-group label {
         width: 100%;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-size: 10px; }
       .principal-wrapper .content-wrapper .panel-body .form-group .btn-group {
         width: 100%;
         display: block; }
@@ -244,7 +248,10 @@ body {
           background: white;
           color: #959595;
           text-align: left;
-          border: 1px solid #555; }
+          border: 1px solid #555;
+          height: 25px;
+          padding-top: 4px;
+          font-size: 10px; }
           .principal-wrapper .content-wrapper .panel-body .form-group .btn-group .dropdown-toggle .caret {
             float: right;
             color: black;
@@ -254,7 +261,9 @@ body {
         background: white;
         color: #959595;
         text-align: left;
-        border: 1px solid #555; }
+        border: 1px solid #555;
+        height: 25px;
+        font-size: 10px; }
       .principal-wrapper .content-wrapper .panel-body .form-group .radio {
         float: left;
         width: 50%;
@@ -262,10 +271,10 @@ body {
         .principal-wrapper .content-wrapper .panel-body .form-group .radio label {
           position: relative;
           overflow: hidden;
-          height: 30px;
+          height: 24px;
           line-height: 2.5;
           padding-left: 30px;
-          margin-top: 5px; }
+          margin-top: 0px; }
           .principal-wrapper .content-wrapper .panel-body .form-group .radio label input {
             position: absolute;
             left: 0; }
@@ -274,11 +283,11 @@ body {
               left: 20px;
               border: 1px solid #959595;
               color: #f89829;
-              width: 20px;
-              height: 20px;
-              font-size: 29px;
+              width: 17px;
+              height: 17px;
+              font-size: 24px;
               border-radius: 15px;
-              content: "ÔùÅ";
+              content: "├ö├╣├à";
               line-height: 0;
               padding-top: 6px;
               content: ""; }
@@ -314,8 +323,8 @@ body {
   background-size: 70px; }
 
 .ico {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
   display: inline-block;
   background-position: center;
@@ -387,43 +396,49 @@ body {
   font-size: 12px;
   width: 100%; }
   .btn.btn-documents-data-inactive {
-    height: 40px;
+    height: 25px;
     background: #959595;
     color: #fff;
     border: 1px solid #595656;
     width: 33%;
-    border-bottom-left-radius: 0px; }
+    border-bottom-left-radius: 0px;
+    padding-top: 4px; }
   .btn.btn-documents-data {
-    height: 40px;
+    height: 25px;
     background: #f89829;
     color: #fff;
     border: 1px solid #A96E0B;
     width: 33%;
-    border-bottom-left-radius: 0px; }
+    border-bottom-left-radius: 0px;
+    padding-top: 3px; }
   .btn.btn-documents-plus {
-    height: 40px;
+    height: 25px;
     background: #fff;
     color: #f89829;
     border: 1px solid #f89829;
-    width: 8%;
-    border-bottom-right-radius: 0px; }
+    width: 5%;
+    border-bottom-right-radius: 0px;
+    padding: 0px; }
     .btn.btn-documents-plus .plus {
       font-size: 24px;
       display: block;
       margin-top: -5px; }
   .btn.btn-apply {
-    height: 35px;
+    height: 25px;
     background: #f89829;
     color: #fff;
     border: 1px solid #A96E0B;
-    width: auto; }
+    width: auto;
+    padding-top: 3px; }
   .btn.btn-action {
-    height: 35px;
     width: 100%;
     background: white;
     color: #595656;
     text-align: left;
-    border: 1px solid #555; }
+    border: 1px solid #555;
+    height: 25px;
+    font-size: 10px;
+    padding-top: 5px; }
 
 .combo-perfil {
   margin-top: -50px; }
@@ -437,14 +452,15 @@ body {
 .search-group-filter {
   width: 100%; }
   .search-group-filter .search-filters, .search-group-filter .search-input {
+    height: 25px;
     border: 1px solid #555;
     border-radius: 4px;
     border-right: none;
-    height: 34px; }
+    font-size: 10px; }
   .search-group-filter .border-input {
     border-left: 1px solid #555; }
   .search-group-filter .search-input {
-    height: 30px !important;
+    height: 25px !important;
     border-right: 1px solid #555; }
 
 .btn-settings {
@@ -457,12 +473,9 @@ body {
     color: #595656;
     background: #EEEEEE;
     border: 1px solid #CDCDCD;
-    height: 35px;
-    border-radius: 4px;
-    border-top-right-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
-    border-top-left-radius: 4px !important;
-    border-bottom-left-radius: 4px !important; }
+    height: 25px;
+    padding-top: 4px;
+    border-radius: 4px !important; }
   .btn-settings .btn-sett:hover {
     background: #f89829;
     color: #fff;
@@ -481,10 +494,10 @@ body {
       font-size: 11px !important; }
       .panel-documents .panel-body .form-group .form-control {
         border: 1px solid #959595 !important;
-        font-size: 12px !important; }
+        font-size: 10px !important; }
       .panel-documents .panel-body .form-group .dropdown-toggle {
         border: 1px solid #959595 !important;
-        font-size: 12px !important; }
+        font-size: 10px !important; }
 
 .registry-inactive {
   color: #fff !important;
@@ -508,19 +521,23 @@ body {
   font-weight: bold !important;
   border: 1px solid #A96E0B !important; }
 
-.nav-pills li {
-  width: 25%; }
-  .nav-pills li a {
-    cursor: pointer;
-    padding-left: 0px;
-    color: #555;
-    font-weight: bold; }
-  .nav-pills li a:hover {
-    background-color: transparent !important;
-    color: #f89829; }
-    .nav-pills li a:hover span {
-      border-bottom: 2px solid #f89829;
-      padding-bottom: 5px; }
+.nav-pills {
+  margin-bottom: 15px; }
+  .nav-pills li {
+    width: 25%; }
+    .nav-pills li a {
+      cursor: pointer;
+      padding-left: 0px;
+      color: #555;
+      font-weight: bold;
+      padding: 0px 15px 3px;
+      font-size: 10px; }
+    .nav-pills li a:hover {
+      background-color: transparent !important;
+      color: #f89829; }
+      .nav-pills li a:hover span {
+        border-bottom: 2px solid #f89829;
+        padding-bottom: 5px; }
 
 .hidden {
   visible: hidden; }
@@ -529,8 +546,10 @@ body {
   color: #595656; }
   .settings-elements .checkbox, .work-elements .checkbox {
     position: relative;
-    margin: 4px auto;
-    line-height: 24px; }
+    margin: 0px auto;
+    line-height: 22px;
+    font-size: 11px;
+    height: 20px; }
     .settings-elements .checkbox label, .work-elements .checkbox label {
       display: inline; }
       .settings-elements .checkbox label input[type=checkbox], .work-elements .checkbox label input[type=checkbox] {
@@ -584,18 +603,19 @@ body {
       float: right;
       font-size: 12px;
       font-weight: normal;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      height: 25px;
+      padding-top: 4px; }
       .principal-buttons-two .btn-wrapper .btn-gray:last-of-type, .last-buttons .btn-wrapper .btn-gray:last-of-type, .footers .btn-wrapper .btn-gray:last-of-type {
         margin-right: 20px; }
   .principal-buttons-two .new-registry, .last-buttons .new-registry, .footers .new-registry {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     text-align: center;
-    width: 30px;
-    height: 30px;
-    background: #f89829;
-    padding-top: 0px;
-    padding-left: 9px;
+    width: 25px;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 8px;
     cursor: pointer;
     background: #f89829; }
   .principal-buttons-two label, .last-buttons label, .footers label {
@@ -607,10 +627,11 @@ body {
     width: 30%;
     margin-left: 20px; }
     .principal-buttons-two .search-group .input-group-addon, .last-buttons .search-group .input-group-addon, .footers .search-group .input-group-addon {
+      font-size: 10px;
       background: none;
       border-right: none;
-      height: 29px;
-      padding: 5px 12px; }
+      height: 25px;
+      padding: 3px 12px; }
     .principal-buttons-two .search-group input, .last-buttons .search-group input, .footers .search-group input {
       border-left: none;
       padding-left: 0px;
@@ -620,6 +641,7 @@ body {
       font-style: italic; }
 
 .result-table {
+  font-size: 10px;
   margin-bottom: 0px;
   border-bottom: 1px solid #959595; }
   .result-table thead tr:first-of-type {
@@ -638,27 +660,34 @@ body {
   .result-table tr:nth-of-type(even) {
     background-color: #e5e5e5; }
   .result-table .ico-crane {
-    background: url("../img/grua.png") no-repeat;
-    width: 56px;
-    height: 41px;
+    background: url(../img/grua.png) no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 30px;
     display: block; }
   .result-table .ico-edit {
-    background: url("../img/edit.png") no-repeat;
-    width: 22px;
-    height: 22px;
+    background: url(../img/edit.png) no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
     display: block;
-    float: left; }
+    float: left;
+    cursor: pointer; }
   .result-table .ico-trash {
-    background: url("../img/trash.png") no-repeat;
-    width: 17px;
-    height: 20px;
+    background: url(../img/trash.png) no-repeat;
+    width: 18px;
+    background-size: contain;
+    height: 18px;
     display: block;
-    float: right; }
+    float: right;
+    cursor: pointer; }
   .result-table .btn-default {
     background-color: #767676;
     background-image: none;
     color: #fff;
-    font-size: 12px; }
+    height: 25px;
+    padding-top: 4px;
+    font-size: 10px; }
     .result-table .btn-default :hover {
       background-color: #767676;
       background-image: none; }
@@ -713,5 +742,12 @@ body {
         border-color: #595656; }
         .pager-wrapper nav .pagination li a:hover {
           background-color: #f89829; }
+
+#collapseOne hr {
+  margin-top: 5px;
+  margin-bottom: 20px; }
+
+.pb15 {
+  padding-bottom: 15px !important; }
 
 /*# sourceMappingURL=main.css.map */

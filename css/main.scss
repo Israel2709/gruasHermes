@@ -208,7 +208,7 @@ body{
 			}
 		}
 		.heading{
-			padding:20px;
+		    padding: 5px 20px;
 			h3{
 				color: white;
 				margin-top: 0px;
@@ -234,8 +234,8 @@ body{
 			}
 		}
 		.panel-heading{
-			position:relative;
-			padding:20px 40px;
+		    position: relative;
+    		padding: 15px 40px;
 			h4{
 				margin-left: -15px;
 				font-weight:bold;
@@ -249,14 +249,13 @@ body{
 				padding:0px;
 			}
 			.new-registry{
-			    font-size: 20px;
+		        font-size: 15px;
 			    color: white;
 			    text-align: center;
-			    width: 30px;
-			    height: 30px;
-			    background: #f89829;
-			    padding-top: 0px;
-			    padding-left: 9px;
+			    width: 25px;
+			    height: 25px;
+		        padding-top: 2px;
+			    padding-left: 8px;
 			    cursor: pointer;				
 			    background:$orangeBg;
 			}
@@ -270,10 +269,11 @@ body{
 				width: 30%;
 				margin-left: 20px;
 				.input-group-addon{
-					background:none;
-					border-right:none;
-					height: 29px;
-					padding:5px 12px;
+					font-size: 10px;
+					background: none;
+				    border-right: none;
+				    height: 25px;
+				    padding: 3px 12px;
 				}
 				input{
 					border-left:none;
@@ -287,6 +287,7 @@ body{
 			}
 			.btn-wrapper{
 				width: 100%;
+				padding-top: 4px;
 				.btn-gray{
 					width: 20%;
 					background:$lightGray;
@@ -295,6 +296,9 @@ body{
 					font-size: 12px;
 					font-weight: normal;
 					letter-spacing: 1px;
+					height: 25px;
+					padding-top:4px;
+					font-size: 10px;
 					&:last-of-type{
 						margin-right: 20px;
 					}
@@ -307,17 +311,17 @@ body{
 				color:$lightGray;
 				position:absolute;
 				left: 0px;
-				bottom: 0px;
+				bottom: -10px;
 			}
 		}
 		.panel-body{
 			border:none !important;
-			padding-left: 40px;
-			padding-right: 40px;
+			padding:5px 40px;
 			.form-group{
 				label{
 					width: 100%;
-					text-transform: uppercase
+					text-transform: uppercase;
+					font-size: 10px;
 				}
 				.btn-group{
 					width: 100%;
@@ -329,6 +333,9 @@ body{
 						color:$lightGray;
 						text-align: left;
 						border: 1px solid #555;
+					    height: 25px;
+    					padding-top: 4px;
+    					font-size: 10px;
 						.caret{
 							float:right;
 							color: black;
@@ -343,34 +350,36 @@ body{
     					color: #959595;
     					text-align: left;
     					border: 1px solid #555;
+					    height: 25px;
+    					font-size: 10px;
 					}
 				.radio{
 					float: left;
 					width: 50%;
 					margin-top: 0px;
 					label{
-						position:relative;
-						overflow: hidden;
-						height: 30px;
-						line-height:2.5; 
-						padding-left:30px;
-						margin-top: 5px;
+						position: relative;
+					    overflow: hidden;
+					    height: 24px;
+					    line-height: 2.5;
+					    padding-left: 30px;
+					    margin-top: 0px;
 						input{
 							position:absolute;
 							left: 0;
 							&:after{
-							    position: absolute;
+						        position: absolute;
 							    left: 20px;
-							    border: 1px solid $lightGray;
+							    border: 1px solid #959595;
 							    color: #f89829;
-							    width: 20px;
-							    height: 20px;
-							    font-size: 29px;
+							    width: 17px;
+							    height: 17px;
+							    font-size: 24px;
 							    border-radius: 15px;
-							    content: "●";
+							    content: "ÔùÅ";
 							    line-height: 0;
 							    padding-top: 6px;
-								content:""
+							    content: "";
 							}
 						}
 						input:checked{
@@ -416,8 +425,8 @@ body{
     background-size: 70px;
 }	
 .ico{
-	width: 24px;
-    height: 24px;
+	width: 20px;
+    height: 20px;
     background-repeat: no-repeat;
     display: inline-block;
     background-position: center;
@@ -512,28 +521,31 @@ body{
 	font-size: 12px;
     width: 100%;	
     	&.btn-documents-data-inactive{
-			height: 40px;
+			height: 25px;
 			background: $lightGray;
 			color: #fff;
 			border: 1px solid $mediumGray;
 			width: 33%;
 			border-bottom-left-radius: 0px;
+			padding-top: 4px;
 		}    
 		&.btn-documents-data{
-			height: 40px;
+			height: 25px;
 			background: $orangeBg;
 			color: #fff;
 			border: 1px solid $orangeDark;
 			width: 33%;
 			border-bottom-left-radius: 0px;
+			padding-top: 3px;
 		}
 		&.btn-documents-plus{
-			height: 40px;
+			height: 25px;
 			background: #fff;
 			color: $orangeBg;
 			border: 1px solid $orangeBg;
-			width: 8%;
+			width: 5%;
 			border-bottom-right-radius: 0px;
+			padding:0px;
 			.plus{
 				font-size: 24px;
 				display: block;
@@ -541,19 +553,22 @@ body{
 			}
 		}
 		&.btn-apply{
-			height: 35px;
+			height: 25px;
 			background: $orangeBg;
 			color: #fff;
 			border: 1px solid $orangeDark;
 			width: auto;
+			padding-top:3px;
 		}
 		&.btn-action{
-			height: 35px;
 			width: 100%;
 		    background: white;
 		    color: $mediumGray;
 		    text-align: left;
 		    border: 1px solid #555;
+		    height:25px;
+		    font-size: 10px;
+    		padding-top: 5px;
 		}
 }
 
@@ -570,16 +585,17 @@ body{
 .search-group-filter{
 	width: 100%;
 	.search-filters, .search-input{
+	    height: 25px;
 		border: 1px solid #555;
     	border-radius: 4px;
     	border-right: none;
-    	height: 34px;
+	    font-size: 10px;
 	}
 	.border-input{
 		border-left: 1px solid #555;
 	}
 	.search-input{
-		height: 30px!important;
+		height: 25px !important;
 		border-right: 1px solid #555;
 	}
 }
@@ -593,12 +609,9 @@ body{
 		color: $mediumGray;
 		background: $panelDm;
 		border: 1px solid $borderBtn;
-		height: 35px;
-		border-radius: 4px;
-		border-top-right-radius: 4px!important;
-    	border-bottom-right-radius: 4px!important;
-    	border-top-left-radius: 4px!important;
-    	border-bottom-left-radius: 4px!important;
+		height: 25px;
+		padding-top:4px;
+		border-radius: 4px !important;
 	}
 	.btn-sett:hover{
 		background: $orangeBg;
@@ -619,11 +632,11 @@ body{
 			    font-size: 11px!important;
 				.form-control{
 					border: 1px solid $lightGray!important;
-					font-size: 12px!important;
+					font-size: 10px!important;
 				}
 				.dropdown-toggle{
 					border: 1px solid $lightGray!important;
-					font-size: 12px!important;
+					font-size: 10px!important;
 				}
 			}	
 	}
@@ -660,6 +673,7 @@ body{
 }
 
 .nav-pills{
+	margin-bottom: 15px;
 	li{
 		width: 25%;
 		a{	
@@ -667,6 +681,8 @@ body{
 			padding-left: 0px;
 			color: #555;
 			font-weight: bold;
+			padding: 0px 15px 3px;
+    		font-size: 10px;
 		}
 		a:hover{
     		background-color: transparent!important;
@@ -685,9 +701,11 @@ body{
 .settings-elements, .work-elements{
 	color: $mediumGray;
 	.checkbox{
-		position: relative;
-  		margin: 4px auto;
-    	line-height: 24px;
+	    position: relative;
+	    margin: 0px auto;
+	    line-height: 22px;
+	    font-size: 11px;
+	    height: 20px;
 		label{
 			display: inline;
 			input[type=checkbox]{
@@ -756,6 +774,8 @@ body{
 					font-size: 12px;
 					font-weight: normal;
 					letter-spacing: 1px;
+					height: 25px;
+    				padding-top: 4px;
 					&:last-of-type{
 						margin-right: 20px;
 					}
@@ -763,16 +783,15 @@ body{
 
 			}
 	.new-registry{
-		font-size: 20px;
-		color: white;
-		text-align: center;
-		width: 30px;
-		height: 30px;
-		background: #f89829;
-		padding-top: 0px;
-		padding-left: 9px;
-		cursor: pointer;				
-		background:$orangeBg;
+		font-size: 15px;
+	    color: white;
+	    text-align: center;
+	    width: 25px;
+	    height: 25px;
+        padding-top: 2px;
+	    padding-left: 8px;
+	    cursor: pointer;				
+	    background:$orangeBg;
 	}
 			label{
 				margin-top:7px;
@@ -784,10 +803,11 @@ body{
 				width: 30%;
 				margin-left: 20px;
 				.input-group-addon{
-					background:none;
-					border-right:none;
-					height: 29px;
-					padding:5px 12px;
+				    font-size: 10px;
+				    background: none;
+				    border-right: none;
+				    height: 25px;
+				    padding: 3px 12px;
 				}
 				input{
 					border-left:none;
@@ -802,6 +822,7 @@ body{
 }
 
 .result-table{
+	font-size:10px;
 	margin-bottom:0px;
 	border-bottom:1px solid $lightGray;
 	thead{
@@ -830,30 +851,37 @@ body{
 		background-color: #e5e5e5;
 	}
 	.ico-crane{
-		background: url("../img/grua.png") no-repeat;
-		width: 56px;
-	    height: 41px;
+		background: url(../img/grua.png) no-repeat;
+	    background-size: contain;
+	    width: 35px;
+	    height: 30px;
 	    display: block;
 	}
 	.ico-edit{
-		background: url("../img/edit.png") no-repeat;
-		width: 22px;
-	    height: 22px;
+		background: url(../img/edit.png) no-repeat;
+	    background-size: contain;
+	    width: 18px;
+	    height: 18px;
 	    display: block;
 	    float: left;
+	    cursor: pointer
 	}
 	.ico-trash{
-		background: url("../img/trash.png") no-repeat;
-		width: 17px;
-	    height: 20px;
+		background: url(../img/trash.png) no-repeat;
+	    width: 18px;
+	    background-size: contain;
+	    height: 18px;
 	    display: block;
 	    float: right;
+	    cursor: pointer
 	}
 	.btn-default{
 		background-color: #767676;
 		background-image: none;
 		color: #fff;
-		font-size: 12px;
+		height: 25px;
+    	padding-top: 4px;
+    	font-size: 10px;
 		& :hover{
 			background-color: #767676;
 			background-image: none;
@@ -927,4 +955,15 @@ body{
 		    }
 		}
 	}
+}
+
+#collapseOne{
+	hr{
+		margin-top:5px;
+		margin-bottom:20px;
+	}
+}
+
+.pb15{
+	padding-bottom:15px !important;
 }
